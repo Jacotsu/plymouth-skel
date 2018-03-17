@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if ! plymouth --ping; then
+	exit 1
+fi
+
+set -- $1
+
+TYPE="$1"
+shift
+MESSAGE="$@"
+
+case "$TYPE" in
+	TEXT|TEXT-URGENT|STATUS) plymouth message --text="log:$MESSAGE" ;;
+	SUCCESS) plymouth message --text="log:ok" ;;
+	FAILURE) plymouth message --text="log:failed" ;;
+	*) exit 1 ;;
+esac
