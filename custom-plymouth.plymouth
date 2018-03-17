@@ -4,5 +4,5 @@ Description=My personal plymouth theme
 ModuleName=script
 
 [script]
-ImageDir=/usr/share/plymouth/themes/plymouth-skel
+ImageDir=/usr/share/plymouth/themes/plymouth-skel/imgs
 ScriptFile=/usr/share/plymouth/themes/plymouth-skel/custom-plymouth.script
