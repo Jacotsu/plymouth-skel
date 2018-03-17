@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-sudo cp -r ../../jacotsu-plymouth/ /usr/share/plymouth/themes
+sudo cp -r ../../plymouth-skel/ /usr/share/plymouth/themes
 sudo plymouthd --debug > debug_plymouthd
 sudo plymouth --show-splash
 
